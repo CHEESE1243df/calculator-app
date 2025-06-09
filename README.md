@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# 🎄 Christmas Scientific Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, responsive scientific calculator with a festive Christmas theme, built using React and TypeScript.
 
-## Available Scripts
+![Calculator Preview](https://i.imgur.com/placeholder.png)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🎨 Festive Christmas theme with holiday colors
+- 📱 Fully responsive design for all screen sizes
+- 🔢 Scientific calculator functions:
+  - Basic arithmetic (addition, subtraction, multiplication, division)
+  - Trigonometric functions (sin, cos, tan)
+  - Logarithmic functions (log, ln)
+  - Constants (π, e)
+  - Power functions (x², x^y)
+  - Square root (√)
+  - Memory functions (MC, MR, M+, M-)
+  - Additional operations (1/x, %)
+- 💫 Smooth animations and hover effects
+- 🎯 Touch-friendly interface for mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/calculator-app.git
+cd calculator-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm run eject`
+## 🛠️ Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://reactjs.org/) - Frontend framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Styled Components](https://styled-components.com/) - Styling
+- [Create React App](https://create-react-app.dev/) - Project setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Responsive Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The calculator is designed to work seamlessly across all devices:
+- Mobile phones (portrait and landscape)
+- Tablets
+- Desktop computers
+- Large screens
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🎨 Theme
 
-## Learn More
+The calculator features a festive Christmas theme with:
+- Dark green background
+- Christmas red accents
+- White/light gray number buttons
+- Forest green scientific function buttons
+- Christmas tree emoji decoration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Inspired by the holiday season
+- Built with React and TypeScript
+- Styled with Styled Components
