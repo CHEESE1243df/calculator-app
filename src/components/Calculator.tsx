@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const CalculatorContainer = styled.div`
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background: #1a472a;
   border-radius: 10px;
-  padding: 20px;
+  padding: clamp(10px, 3vw, 20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid #c41e3a;
   position: relative;
   overflow: hidden;
+  margin: 20px;
 
   &::before {
     content: '🎄';
@@ -17,20 +19,25 @@ const CalculatorContainer = styled.div`
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 40px;
+    font-size: clamp(30px, 5vw, 40px);
+  }
+
+  @media (max-width: 480px) {
+    margin: 10px;
+    padding: 15px;
   }
 `;
 
 const Display = styled.div`
   background: #f8f8f8;
-  padding: 20px;
+  padding: clamp(15px, 3vw, 20px);
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 3vw, 20px);
   text-align: right;
-  font-size: 2em;
+  font-size: clamp(1.5em, 4vw, 2em);
   font-family: monospace;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-height: 60px;
+  min-height: clamp(50px, 8vw, 60px);
   word-wrap: break-word;
   border: 2px solid #c41e3a;
   color: #1a472a;
@@ -39,12 +46,16 @@ const Display = styled.div`
 const ButtonGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: clamp(5px, 2vw, 10px);
+
+  @media (max-width: 480px) {
+    gap: 5px;
+  }
 `;
 
 const Button = styled.button<{ span?: number }>`
-  padding: 15px;
-  font-size: 1.2em;
+  padding: clamp(10px, 2vw, 15px);
+  font-size: clamp(1em, 3vw, 1.2em);
   border: none;
   border-radius: 5px;
   background: #f8f8f8;
@@ -53,6 +64,7 @@ const Button = styled.button<{ span?: number }>`
   grid-column: span ${props => props.span || 1};
   color: #1a472a;
   border: 1px solid #c41e3a;
+  min-height: clamp(40px, 8vw, 50px);
 
   &:hover {
     background: #e0e0e0;
@@ -62,6 +74,11 @@ const Button = styled.button<{ span?: number }>`
   &:active {
     background: #d0d0d0;
     transform: translateY(0);
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    min-height: 40px;
   }
 `;
 
@@ -82,6 +99,7 @@ const ScientificButton = styled(Button)`
   background: #2d5a27;
   color: white;
   border: 1px solid #c41e3a;
+  font-size: clamp(0.8em, 2.5vw, 1em);
 
   &:hover {
     background: #1a472a;
@@ -89,6 +107,10 @@ const ScientificButton = styled(Button)`
 
   &:active {
     background: #0f2d1a;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8em;
   }
 `;
 

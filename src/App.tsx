@@ -8,6 +8,12 @@ const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 `;
 
 function App() {
